@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
+    "element-ui": "^2.13.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
+    "tailwindcss": "^1.2.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -22,6 +24,10 @@
     "eslint": "^6.8.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-vue": "^6.1.2",
+    "google-fonts-plugin": "^5.0.2",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-tailwind": "~1.2.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -38,8 +44,15 @@
       "parser": "babel-eslint"
     },
     "rules": {
-      "semi": ["error", "always"],
-      "comma-dangle": ["error", "always"]
+      "semi": [
+        "error",
+        "always"
+      ],
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "linebreak-style": 0
     }
   },
   "browserslist": [
