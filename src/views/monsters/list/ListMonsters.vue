@@ -1,9 +1,12 @@
 <template>
   <div>
+    <h1>Monsters</h1>
     <list-table
       v-if="monsters && monsters.length"
       :data="monsters"
       :display-fields="tableDisplayFields"
+      @search="onSearch"
+      @row-click="onRowClick"
     />
   </div>
 </template>
@@ -41,6 +44,17 @@ export default {
         },
       ],
     };
+  },
+
+  methods: {
+    onSearch(term) {
+      // TODO integrate with the search functionality of opendm-api
+      console.log(term);
+    },
+
+    onRowClick(monster) {
+      this.$router.push(`/monsters/view/${monster.id}`);
+    },
   },
 
   mounted() {

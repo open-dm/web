@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Layout from './components/layout/Layout.vue';
+import Layout from './components/layout/Layout';
 
 export default {
   name: 'App',
@@ -17,7 +17,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import url("https://fonts.googleapis.com/icon?family=Roboto");
+
 #app {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,7 +28,12 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-</style>
-<style lang="scss">
-  @import url("https://fonts.googleapis.com/icon?family=Roboto");
+
+h1 {
+  @apply .m-4 .text-4xl;
+}
+
+h3 {
+  @apply .m-4 .text-4xl;
+}
 </style>

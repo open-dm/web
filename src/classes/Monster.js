@@ -11,12 +11,15 @@ export default class Monster extends Model {
 
   alignment;
 
+  abilites;
+
   constructor({
     id,
     name,
     size,
     challenge,
     alignment,
+    abilities,
   }) {
     super({ id });
 
@@ -24,6 +27,7 @@ export default class Monster extends Model {
     this.size = size;
     this.challenge = challenge;
     this.alignment = alignment;
+    this.abilities = abilities;
   }
 
   test() {

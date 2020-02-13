@@ -17,6 +17,18 @@ export default class Model {
     });
   }
 
+  static retrieve(id) {
+    return new Promise((resolve, reject) => {
+      axios.get(formatUrl(`/api/${this.modelName}/retrieve/${id}`))
+        .then(({ data }) => {
+          resolve(new this(data));
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
   constructor({
     id,
   }) {
