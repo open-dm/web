@@ -3,13 +3,21 @@
     class="text-center"
     shadow="never"
   >
-    <p>{{ ability.score }}</p>
-    <p>{{ ability.modifier >= 0 ? '+' : '-' }}{{ ability.modifier }}</p>
-    <p class="text-xs">{{ name }}</p>
+    <p class="text-xs mb-2">
+      {{ upperFirst(name) }}
+    </p>
+    <p class="mb-1">
+      {{ ability.score }}
+    </p>
+    <p>
+      {{ ability.modifier >= 0 ? '+' : '-' }}{{ ability.modifier }}
+    </p>
   </el-card>
 </template>
 
 <script>
+import { upperFirst } from 'lodash';
+
 export default {
   name: 'ability',
 
@@ -22,6 +30,10 @@ export default {
       type: String,
       required: true,
     },
+  },
+
+  methods: {
+    upperFirst,
   },
 };
 </script>
