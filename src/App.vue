@@ -28,12 +28,4 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-
-h1 {
-  @apply .m-4 .text-4xl;
-}
-
-h3 {
-  @apply .m-4 .text-4xl;
-}
 </style>
