@@ -13,13 +13,16 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
     "tailwindcss": "^1.2.0",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "^4.2.2",
+    "@vue/cli-plugin-router": "^4.2.2",
     "@vue/cli-service": "~4.2.0",
     "@vue/eslint-config-airbnb": "^5.0.2",
+    "axios": "^0.18.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
     "eslint-plugin-import": "^2.20.1",
@@ -27,6 +30,7 @@
     "google-fonts-plugin": "^5.0.2",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
+    "vue-cli-plugin-axios": "0.0.4",
     "vue-cli-plugin-tailwind": "~1.2.0",
     "vue-template-compiler": "^2.6.11"
   },

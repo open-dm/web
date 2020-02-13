@@ -5,7 +5,9 @@
   >
     <el-menu class="menu">
       <el-menu-item>Characters</el-menu-item>
-      <el-menu-item>Monsters</el-menu-item>
+      <router-link to="/monsters/list">
+        <el-menu-item>Monsters</el-menu-item>
+      </router-link>
       <el-menu-item>Items</el-menu-item>
       <el-menu-item>Journal</el-menu-item>
       <el-menu-item>Locations</el-menu-item>
@@ -20,11 +22,14 @@ export default {
 </script>
 
 <style scoped>
-.side-bar,
-.menu * {
-  @apply bg-blue-600 text-white;
+.side-bar {
+  @apply bg-blue-800;
 }
 
+.menu,
+.menu * {
+  @apply bg-transparent text-white;
+}
 
 .menu *:hover {
   @apply bg-gray-300 text-blue-700;

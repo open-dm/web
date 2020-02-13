@@ -5,20 +5,25 @@
     <el-container>
 
       <el-header class="header">
-        <div class="logo-container">
-          <img
-            class="inline-block"
-            alt="OpenDM logo"
-            src="@/assets/vectors/opendmlogo.svg"
-            width="30px"
+        <div
+          class="logo-container"
+        >
+          <router-link
+            to="/"
           >
-          <span>Open DM</span>
+            <img
+              class="inline-block"
+              alt="OpenDM logo"
+              src="@/assets/vectors/opendmlogo.svg"
+              width="30px"
+            >
+            <span>Open DM</span>
+          </router-link>
         </div>
       </el-header>
 
       <el-main class="body">
-        <el-button type="primary">Primary</el-button>
-        <el-button type="secondary">Secondary</el-button>
+        <slot name="content" />
       </el-main>
 
     </el-container>
