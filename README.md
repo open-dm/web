@@ -1,4 +1,12 @@
-# opendm-web
+# OpenDM Web
+
+OpenDM Web is a frontend web app for OpenDM's API. This app is built using the following technologies:
+
+* Vue.js
+* Vue-cli
+* Webpack
+* Element UI
+* TailwindCSS
 
 ## Project setup
 ```
