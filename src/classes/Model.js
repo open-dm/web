@@ -4,11 +4,14 @@ import { formatUrl } from '@/helpers/url';
 export default class Model {
   id;
 
-  static modelName = 'monster';
+  static modelName;
 
-  static list() {
+  static list(params) {
     return new Promise((resolve, reject) => {
-      axios.get(formatUrl(`/api/${this.modelName}/list/`))
+      axios.get(formatUrl(`/api/${this.modelName}/list/`),
+        {
+          params,
+        })
         .then(({ data }) => {
           resolve(data.map((record) => new this(record)));
         }).catch((error) => {
