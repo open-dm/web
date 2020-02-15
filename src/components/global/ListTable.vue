@@ -119,7 +119,7 @@ export default {
     return {
       searchTerm: '',
       filterValues: {},
-      showFilterDialog: true,
+      showFilterDialog: false,
       internalLimit: 100,
     };
   },
@@ -172,7 +172,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-
-</style>
