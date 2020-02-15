@@ -125,8 +125,7 @@ export default {
   },
 
   methods: {
-    onRowClick(item, column, event) {
-      console.log(item, column, event);
+    onRowClick(item) {
       this.$emit('row-click', item);
     },
 
@@ -145,7 +144,6 @@ export default {
     },
 
     onFilterSelected(value, index) {
-      console.log(value, index);
       this.filterValues[index] = value;
 
       this.filterValues = { ...this.filterValues };
@@ -168,8 +166,6 @@ export default {
   },
 
   mounted() {
-    console.log(this.data, this.displayFields);
-
     Object.keys(this.filterSets).forEach((key) => {
       this.filterValues[key] = [];
     });

@@ -84,8 +84,6 @@ export default {
         .filter((key) => filters[key].length)
         .map((key) => `${key}:${filters[key].join(',')}`);
 
-      console.log(this.filters);
-
       this.fetchMonsters();
     },
 
