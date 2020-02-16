@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Monsters</h1>
-    <list-table
+    <odm-list-table
       v-if="monsters"
       :data="monsters"
       :display-fields="tableDisplayFields"
@@ -21,13 +21,13 @@ import Monster from '@/classes/Monster';
 import Alignment from '@/classes/Alignment';
 import Size from '@/classes/Size';
 
-import ListTable from '@/components/global/ListTable';
+import OdmListTable from '@/components/global/OdmListTable';
 
 export default {
   name: 'list-monsters',
 
   components: {
-    ListTable,
+    OdmListTable,
   },
 
   data() {

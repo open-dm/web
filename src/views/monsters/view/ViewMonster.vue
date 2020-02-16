@@ -1,25 +1,21 @@
 <template>
-  <div>
+  <el-container>
     <template v-if="monster">
-      <h1>{{ monster.name }}</h1>
-
-      <h3>Abilities</h3>
-      <abilities
-        :abilities="monster.abilities"
-      />
+      <odm-monster :monster="monster" />
     </template>
-  </div>
+  </el-container>
 </template>
 
 <script>
-import Abilities from '@/components/global/Abilities';
 import Monster from '@/classes/Monster';
+
+import OdmMonster from '@/components/global/OdmMonster';
 
 export default {
   name: 'view-monster',
 
   components: {
-    Abilities,
+    OdmMonster,
   },
 
   data() {

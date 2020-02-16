@@ -6,10 +6,10 @@
     <p class="text-xs mb-2">
       {{ upperFirst(name) }}
     </p>
-    <p class="mb-1">
+    <p class="mb-1 text-lg">
       {{ ability.score }}
     </p>
-    <p>
+    <p class="text-lg">
       {{ ability.modifier >= 0 ? '+' : '-' }}{{ ability.modifier }}
     </p>
   </el-card>
@@ -19,7 +19,7 @@
 import { upperFirst } from 'lodash';
 
 export default {
-  name: 'ability',
+  name: 'odm-ability',
 
   props: {
     ability: {
