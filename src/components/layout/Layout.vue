@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import Sidebar from './Sidebar.vue';
+import Sidebar from './Sidebar';
 
 export default {
   name: 'layout',
